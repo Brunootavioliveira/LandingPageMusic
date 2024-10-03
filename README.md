@@ -2,6 +2,9 @@
 
 fazer div da section img-features um pouco mais próximo da div features-list, dimunuir margin-left: 100px para margin-left: 90px;
 
+icons
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 2 section
 
 <section class="artistas">
@@ -19,3 +22,12 @@ fazer div da section img-features um pouco mais próximo da div features-list, d
       </button>
   </div>
 </section>
+
+.card {
+background-color: #6b2fc3
+border-radius: 56px
+}
+
+.card:nth-child(2) {
+background-color: #e86aff;
+}
