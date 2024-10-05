@@ -313,20 +313,22 @@ p {
   padding: 20px;
 }
 
-.contatos{
-  height: 100vh;
-  margin-top: 200px;
+.contatos {
+  margin-top: 150px;
+  padding: 17.9px;
 }
 
 #comentarios {
-  width: 39.7em;
-  height: 48.7em;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .comente-container {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  height: 46.4em;
   border-radius: 10px;
   text-align: center;
   justify-content: center;
@@ -340,9 +342,9 @@ p {
   color: #ffffff;
 }
 
-
 .comente-container textarea, .comente-container input {
-  width: 20em;
+  width: 100%;
+  max-width: 400px;
   padding: 15px;
   margin: 10px 0;
   border: 1px solid var(--white-color);
@@ -351,12 +353,9 @@ p {
   color: white;
 }
 
-.comente-container textarea::placeholder, .comente-container input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .comente-container button {
-  width: 15em;
+  width: 100%;
+  max-width: 200px;
   padding: 15px;
   margin: 20px 0;
   border: none;
