@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicFiap</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="text-content">
             <h1>Transforme cada <span class="highlight">BATIDA</span> em uma <span class="highlight">EXPERIÊNCIA ÚNICA.</span></h1>
             <p>Sua música, seu estilo, seu mundo sonoro.</p>
-            <button class="btn" onclick="playSound()">SOLTE O SOM</button>
+            <div class="teste">
+                <button class="btn" onclick="playSound()">SOLTE O SOM</button>
+                <audio id="meuAudio" src="mp3/caminho.mp3"></audio>
+            </div>
         </div>
         <div class="image-content">
             <img src="img/headphones.png" alt="Headphones">
@@ -19,13 +23,13 @@
     </div>
 
     <section class="platforms-section">
-        <h2>Música nas principais plataformas!</h2>
+        <h2 class="titulo-plataforma">Música nas principais plataformas!</h2>
         <div class="platform-icons">
-            <img src="img/fabandroid.png" class="fab fa-android"></img>
-            <img src="img/fabiphone.png" class="fab fa-android"></img>
-            <img src="img/fabiwindows.png" class="fab fa-android"></img>
-            <img src="img/fab.png" class="fab fa-android"></img>
-            <img src="img/fabipinguin.png" class="fab fa-android"></img>
+            <i class="fab fa-android"></i>
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-windows"></i>
+            <img src="img/fab.png" class="fab fa-mac"></img>
+            <i class="fab fa-linux"></i>
         </div>
         <div class="features">
             <div class="image-box">
@@ -44,7 +48,80 @@
                 <p>Descubra nossa plataforma <span class="highlight">intuitiva</span> Navegue <br>facilmente entre suas músicas e playlists favoritas <br>com um design clean e amigável.</p>
             </div>
         </div>
+        <div class="artistas">
+            <div id="direitaCard" class="card">
+                <img src="img/artista.png" alt="Artista cantando">
+                <div class="text">
+                    <h2 class="titulo-artista">Descubra novos <span class="highlight">ARTISTAS</span></h2>
+                    <p>com base nas mais ouvidas da semana</p>
+                    <a class="seta-cantor" href="#">&#10132;</a>
+                </div>
+            </div>
+    
+            <div id="esquerdaCard" class="card">
+                <img src="img/pessoa-headphone.png" alt="Pessoa ouvindo música com fone de ouvido">
+                <div class="text">
+                    <h2 class="titulo-headphone">Desfrute da <span class="highlight">MELHOR<br> QUALIDADE</span> de som</h2>
+                    <a class="seta-headphone" href="#">&#10132;</a>
+                </div>
+            </div>
+        </div>
     </section>
+    <section id="depoimentos">
+        <div class="comentarios">
+            <div id="coment-baixo" class="coment depo">
+                <div class="coment-img">
+                    <img src="img/artista.png" alt="Depoimento de Alex Maia">
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="coment-title">Simas Turbo</h5>
+                <p class="coment-text">"A qualidade do áudio está muito acima da média. As músicas tocam super claras, parece que estou ouvindo ao vivo. Se você gosta de ouvir música com uma ótima qualidade esse é o aplicativo"</p>
+            </div>
+
+            <div class="coment depo">
+                <div class="coment-img">
+                    <img src="img/artista.png" alt="Depoimento de Júlia Silva">
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="coment-title">Paula Tejano</h5>
+                <p class="coment-text">"É super fácil navegar pelas playlists, álbuns e encontrar novas músicas. O design minimalista facilita muito o uso, Amei!"</p>
+            </div>
+        </div>
+    </section>
+    <section class="contatos" style="background-image: url('img/image\ \(1\).png');">
+        <div id="comentarios">
+            <div class="comente-container">
+                <h1>CONTATO</h1>
+                <form>
+                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="E-mail">
+                    <input class="mensagem-input" type="text" placeholder="Mensagem">
+                    <button id="btnCriar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/AppMelodia" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/AppMelodia" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/AppMelodia" target="_blank">Facebook</a>
+        </div>
+        <a href="#" class="privacy-policy">Política de Privacidade</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
