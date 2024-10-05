@@ -12,6 +12,7 @@ Este projeto é uma landing page para um aplicativo de música, criada utilizand
 - *JavaScript*: Interatividade e funcionalidades dinâmicas.
 - *Bootstrap*: Framework para layout responsivo.
 - *Figma*: Ferramenta de design utilizada para criar o protótipo da página.
+https://www.figma.com/design/5y5ZTNOdgIBE2dJaBDtlZn/Untitled?node-id=0-1&t=igoZZMK4JKE37dwy-1
 
 ## Funcionalidades
 
