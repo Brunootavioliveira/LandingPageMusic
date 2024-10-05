@@ -1,0 +1,391 @@
+:root {
+    --purple-color: #2d1b56;
+    --purplebtn-color: #7d5ef3;
+    --purplebtnhover-color: #5c42c9;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--purple-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--white-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 4000px;
+}
+
+.text-content {
+    max-width: 950px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.highlight {
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: var(--purplebtn-color);
+    color: var(--white-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 150px;
+
+    &:hover {
+        background-color: var(--purplebtnhover-color);
+    }
+}
+
+.image-content {
+    img {
+        width: 650px;
+        height: auto;
+    }
+}
+
+.platforms-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 170px;
+
+    .titulo-plataforma {
+        margin-bottom: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1em;
+        font-weight: 1rem;
+    }
+
+    .platform-icons {
+        i {
+            font-size: 3em;
+            margin: 0 100px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        img {
+            font-size: 3em;
+            margin: 0 100px;
+            color: white;
+            margin-top: 10px;
+        }
+    }
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    .image-box {
+        img {
+            width: 500px;
+            height: auto;
+            margin-top: 200px;
+            margin-right: 200px;
+        }
+    }
+
+    .img-features {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        margin-top: 150px;
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 160px;
+        margin-left: 90px;
+        gap: 30px;
+
+        p {
+            font-weight: 100;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    }
+}
+
+.artistas {
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+    margin-top: 250px;
+
+    .card {
+        background-color: #9385FF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        width: 829px;
+        height: 17rem;
+        position: relative;
+        color: white;
+        flex-direction: row-reverse;
+        border-radius: 56px;
+
+        #direitaCard {
+            margin-left: 410px;
+        }
+
+        #esquerdaCard {
+            img {
+                height: 348px;
+                width: 500px;
+                margin-bottom: 4.7em;
+            }
+        }
+
+        img {
+            width: 337.21px;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 27px;
+        }
+
+        &.nth-child(2) {
+            background-color: #9B76A9;
+            margin-right: 100px;
+            flex-direction: row;
+        }
+    }
+}
+
+.titulo-artista,
+.titulo-headphone {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    font-weight: 1;
+}
+
+.seta-cantor,
+.seta-headphone {
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    transform: rotate(320deg);
+
+    &.seta-cantor {
+        left: 20px;
+        bottom: 200px;
+    }
+
+    &.seta-headphone {
+        left: 750px;
+        bottom: 200px;
+    }
+}
+
+#depoimentos {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+
+    .comentarios {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 200px;
+
+        .coment {
+            &.depo {
+                background-color: white;
+                border-radius: 56px;
+                width: 400px;
+                height: 500px;
+                padding: 2rem;
+                text-align: center;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+                position: relative;
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+
+            &-img {
+                margin-top: -50px;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    border: 4px solid white;
+                    object-fit: cover;
+                }
+            }
+
+            .stars {
+                color: #DDA0DD;
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .coment-title {
+                font-size: 1.25rem;
+                font-weight: bold;
+                color: #4b1cac;
+                margin: 1rem 0 0.5rem;
+            }
+
+            .coment-text {
+                font-size: 1.25rem;
+                color: #555;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+#coment-baixo {
+    margin-top: 150px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 20px;
+
+    .contatos {
+        height: 100vh;
+        margin-top: 200px;
+    }
+
+    #comentarios {
+        width: 39.7em;
+        height: 48.7em;
+    }
+
+    .comente-container {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        textarea,
+        input {
+            width: 100%;
+            max-width: 20em;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid var(--white-color);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        button {
+            width: 100%;
+            max-width: 15em;
+            padding: 15px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 35px;
+            background: var(--white-color);
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: #000;
+                color: var(--white-color);
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 30%;
+
+    .social-links {
+        a {
+            margin: 0 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.2rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .privacy-policy {
+        display: flex;
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+        justify-content: end;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    comentarios {
+        flex-direction: column;
+        align-items: center;
+    }
+}
